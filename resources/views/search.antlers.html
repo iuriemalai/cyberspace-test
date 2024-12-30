@@ -1,0 +1,10 @@
+{{ search:results index="default" }}
+    {{ if no_results }}
+        <h2>Sorry, no results for: {{ get:q }}</h2>
+    {{ else }}
+        <a href="{{ url }}">
+            <img src="{{ image }}" alt="{{ filename }}">
+            <h2>{{ title }}</h2>
+        </a>
+    {{ /if }}
+{{ /search:results }}

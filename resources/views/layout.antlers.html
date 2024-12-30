@@ -14,6 +14,11 @@
 		{{ /nav  }}
 	</nav>
 
+	<form class="text-green text-center flex items-center justify-center space-x-4" action="/search">
+		<input type="search" name="q" placeholder="Search" class="text-black">
+		<button type="submit">Go find it!</button>
+	</form>
+
 	<div class="container max-w-lg mx-auto py-8">
 		{{ template_content }}
 	</div>
